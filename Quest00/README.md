@@ -83,6 +83,70 @@
 
 -   git의 clone/add/commit/push/pull/branch/stash 명령은 무엇이며 어떨 때 이용하나요? 그리고 어떻게 사용하나요?
 
+<<<<<<< HEAD
+=======
+    -   git clone : 원격 저장소를 로컬에 복제해오는 명렁어
+
+    ```
+    git clone [원격 저장소 주소]
+    ```
+
+    -   git add : 작업 디렉토리(working directory)상의 변경 내용을
+        스테이징 영역(Staging Area)에 추가하는 명령서
+
+    ```
+    git add
+    git add.
+    git add -A
+    git add -p
+    git add -u
+    ```
+
+    [git add 기본 개념/사용법](https://www.daleseo.com/git-add/)
+    [git add -A 와 git add .의 차이](https://github.com/sukyungdev/TIL/blob/main/git_github/git_add.md)
+
+    -   git commit : 로컬에 변경 사항을 기록하는 명령어
+
+    ```
+    git commit
+    git commit -m "커밋 메세지를 간단하게 작성할때 사용한다"
+    ```
+
+    -   git push : commit으로 인한 기록을 원격 저장소에 저장하는 명령어
+
+    ```
+    git push [원격저장소][브랜치명]
+    ```
+
+    [What are the differences between "git commit" and "git push"?](https://stackoverflow.com/questions/2745076/what-are-the-differences-between-git-commit-and-git-push)
+
+    -   git pull : 원격 저장소에서 로컬 저장소로 코드를 가져오는 명령어
+        > fetch와 비슷하나 merge를 하고 안하고에 따른 차이가 있다.
+
+    ```
+    git pull [원격저장소][브랜치명]
+    ```
+
+    [pull과 fetch의 차이는 무엇일까?](https://devlog-wjdrbs96.tistory.com/236)
+
+    -   git branch : 동시에 다양한 작업을 할 수 있는 개별적인 작업공간인 branch를 만드는 명령어.
+
+    ```
+    git branch [브랜치명]
+    ```
+
+    [3.1 Git 브랜치 - 브랜치란 무엇인가](https://git-scm.com/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80)
+
+    -   git stash : 변경사항을 임시로 저장하는 명령어
+
+    ```
+    git stash
+    git stash -m "메세지 입력 가능"
+    ```
+
+    [7.3 Git 도구 - Stashing과 Cleaning](https://git-scm.com/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Stashing%EA%B3%BC-Cleaning#_git_stashing)
+
+>>>>>>> d4ae4af (Add content_20220802)
 -   git의 Object, Commit, Head, Branch, Tag는 어떤 개념일까요? git 시스템은 프로젝트의 히스토리를 어떻게 저장할까요?
 -   리모트 git 저장소에 원하지 않는 파일이 올라갔을 때 이를 되돌리려면 어떻게 해야 할까요?
 
